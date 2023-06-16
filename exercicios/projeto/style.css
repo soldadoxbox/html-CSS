@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body{
+    background-color: brown ;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(81, 5, 5), rgb(255, 0, 0));
+    color: rgb(255, 180, 180);
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(81, 5, 5), rgb(255, 0, 0));
+    color: rgb(255, 180, 180);
+}
+
+ol{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, rgb(81, 5, 5), rgb(255, 0, 0));
+    color: rgb(255, 180, 180);
+    width: 50;
+}

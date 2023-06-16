@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Antes eram muito ultilizado da forma html 4 que são formadas assim:
+        <div>
+            <div id="cabecalho">
+                <h1>
+
+                </h1>
+            </div>
+            <div id="menu">
+
+            </div>
+            <div id="conteudo">
+
+            </div>
+            <div id="rodape">
+
+            </div>
+        </div>
+        Não há problema ultilizar esse código, ainda funciona, mas no HTML 5 é mais semântico usas o código abaixo. Citado no *<body> ... </body>*
+    -->
+    <title>Grouping tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #75f779;
+      }
+
+      header {
+        background-color: #491cec;
+        box-shadow: 4px 3px 10px black;
+        color: #f1ebf1;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 33px 0px;
+      }
+
+      nav {
+        background-color: #592fef;
+        padding: 3px;
+        box-shadow: 4px 3px 10px black;
+        border-radius: 33px;
+
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: #ed6be5;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      main {
+        background-color: #3100E0;
+        box-shadow: 4px 3px 10px black;
+        color: #efdf2e;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 33px 0px;
+      }
+
+      article {
+        background-color: #16E01E;
+        box-shadow: 4px 3px 10px black;
+        color: #431f42;
+        border-radius: 6px;
+      }
+
+      article > aside {
+        background-color: #bccbbc;
+        color: #3e083b;
+        border-radius: 6px;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+        border-radius: 33px;
+      }
+
+      footer > p {
+        margin: 4px;
+        border-radius: 33px;
+      }
+
+      .links{
+        background-color: #16E01E;
+        
+      }
+      
+      div#bola{
+        height: 100px;
+        width: 100px;
+        margin: 30px;
+        background-color: #3100E0;
+        border-radius: 50px;
+      }
+
+      div#sbola{
+        height: 80px;
+        width: 80px;
+        margin: 10px;
+        background-color: #75f779;
+        border-radius: 60px;
+      }
+
+      div#ssbola{
+        height: 60px;
+        width: 60px;
+        margin: 10px;
+        background-color: #004f10;
+        border-radius: 60px;
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aqui o estilo do site esta diferente</h1>
+        <nav>
+            <a href="#">Bordas</a>
+            <a href="#">Coloração</a>
+            <a href="#">Cores</a>
+            <a href="#">Texto</a>
+            <a href="#">Sombreamento</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Harmônia das cores dependo das sínteses acromáticas</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>O texto mudou</h2>
+                    <p>Inclusive eu estu escrevendo essa mensagem como teste, mudando as configurações de fontes e tambem mudando o conteúdo desse texto pode notar que as fontes estam diferentes.</p>
+                <aside>
+                    <p>Esse sub-título agora pode te manda para o início da página clicando <a href="caixa.html" target="_self" rel="prev">aqui</a></p>
+                </aside>
+            </article>
+            <p>Passando o mouse <p class="mouse">aqui</p> você revela um texto escondido.</p>
+            <article class="links">
+                <p><a href="caixa03.html" target="_self" rel="prev">Voltar</a></p>
+                <p><a href="caixa05.html" target="_self" rel="next">Próximo</a></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Bruno Silva</p>
+    </footer>
+    <div id="bola">
+        <div id="sbola">
+            <div id="ssbola">
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Antes eram muito ultilizado da forma html 4 que são formadas assim:
+        <div>
+            <div id="cabecalho">
+                <h1>
+
+                </h1>
+            </div>
+            <div id="menu">
+
+            </div>
+            <div id="conteudo">
+
+            </div>
+            <div id="rodape">
+
+            </div>
+        </div>
+        Não há problema ultilizar esse código, ainda funciona, mas no HTML 5 é mais semântico usas o código abaixo. Citado no *<body> ... </body>*
+    -->
+    <title>Grouping tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #A86911;
+      }
+
+      header {
+        background-color: #E0AB38;
+        box-shadow: 4px 3px 10px black;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      nav {
+        background-color: #85530d;
+        padding: 3px;
+        box-shadow: 4px 3px 10px black;
+
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      main {
+        background-color: #E18B44;
+        box-shadow: 4px 3px 10px black;
+        color: #341700;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      article {
+        background-color: #5C381C;
+        box-shadow: 4px 3px 10px black;
+        color: white;
+      }
+
+      article > aside {
+        background-color: #341700;
+        color: white;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+      }
+
+      footer > p {
+        margin: 4px;
+      }
+
+      .links{
+        background-color: #E0AB38;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Capuccino e Chocolate</h1>
+        <nav>
+            <a href="#">História</a>
+            <a href="#">Produção</a>
+            <a href="#">Receitas</a>
+            <a href="#">Fabricas</a>
+            <a href="#">Mercado</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Você pode aprender mais com chocolates e cafés</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Você Sabia?</h2>
+                    <p>Os suiços não foram os primeiros a fabricarem chocolate, mas foram os pioneiros na adção de leite para chegar ao chocolate como conhecemos hoje em dia. O chocolate ajuda a liberar endorfina em nosso cerebro, cujo também é o hormônio responsável por fazer você ficar apaixonado. E o café com a caféina ajudar a nos manter com bom humor e saúde.</p>
+                <aside>
+                    <p>Ja tomou café, capuccino e chocolate hoje?</p>
+                </aside>
+            </article>
+            <p>Também existem receitas veganas para chocolates sem adição de leite, usando açucares orgânicos e outas frutas para novas alternativas de consumo.</p>
+            <article class="links">
+                <p><a href="caixa02.html" target="_self" rel="prev">Voltar</a></p>
+                <p><a href="caixa04.html" target="_self" rel="next">Próximo</a></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Bruno Silva</p>
+    </footer>
+</body>
+</html>

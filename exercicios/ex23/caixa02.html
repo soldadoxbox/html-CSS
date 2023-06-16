@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Antes eram muito ultilizado da forma html 4 que são formadas assim:
+        <div>
+            <div id="cabecalho">
+                <h1>
+
+                </h1>
+            </div>
+            <div id="menu">
+
+            </div>
+            <div id="conteudo">
+
+            </div>
+            <div id="rodape">
+
+            </div>
+        </div>
+        Não há problema ultilizar esse código, ainda funciona, mas no HTML 5 é mais semântico usas o código abaixo. Citado no *<body> ... </body>*
+    -->
+    <title>Grouping tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+      }
+
+      header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      nav {
+        background-color: rgb(154, 164, 164);
+        padding: 3px;
+
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      article {
+        background-color: lightgray;
+      }
+
+      article > aside {
+        background-color: rgb(124, 124, 124);
+        color: rgb(197, 194, 194);
+      }
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Nóticia sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet odit cumque reiciendis eos qui dignissimos voluptatem molestias enim dolor consequatur. Enim, soluta dolore ea consequuntur suscipit unde. Minus, nihil ullam?</p>
+                <aside>
+                    <p>Artigo escrito por José Serra</p>
+                </aside>
+            </article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam est maiores aspernatur hic illum nisi, ut natus debitis quo vel id error adipisci a distinctio odio aperiam inventore soluta voluptas?</p>
+            <article>
+                <p><a href="caixa.html" target="_self" rel="prev">Voltar</a></p>
+                <p><a href="caixa03.html" target="_self" rel="next">Próximo</a></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Bruno Silva</p>
+    </footer>
+</body>
+</html>
